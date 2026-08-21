@@ -1,0 +1,232 @@
+/* --------------------
+   GENERAL PAGE STYLING
+-------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #ffffff;
+}
+
+
+/* --------------------
+   NAVIGATION BAR
+-------------------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 8%;
+
+    border-bottom: 1px solid #dddddd;
+}
+
+.nav-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* --------------------
+   HOMEPAGE
+-------------------- */
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 70px;
+
+    max-width: 1100px;
+
+    margin: 100px auto;
+    padding: 0 30px;
+}
+
+.profile-image img {
+    width: 350px;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+.bio {
+    max-width: 500px;
+}
+
+.bio h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.bio h2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #555;
+}
+
+.bio p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* --------------------
+   MOBILE DEVICES
+-------------------- */
+
+@media (max-width: 750px) {
+
+    .home {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .profile-image img {
+        width: 280px;
+        height: 280px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+/* --------------------
+   GENERAL SUBPAGES
+-------------------- */
+
+.page {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 30px;
+}
+
+.page h1 {
+    font-size: 44px;
+}
+
+.page-intro {
+    max-width: 700px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    margin-bottom: 50px;
+}
+
+
+/* --------------------
+   PROJECT CARDS
+-------------------- */
+
+.projects-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.project-card {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    padding: 30px;
+}
+
+.project-card h2 {
+    margin-top: 0;
+}
+
+.project-card p {
+    line-height: 1.6;
+}
+
+.project-card a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+@media (max-width: 750px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* --------------------
+   RESEARCH PAGE
+-------------------- */
+
+.experience {
+    margin-bottom: 60px;
+}
+
+.experience h2 {
+    margin-bottom: 5px;
+}
+
+.experience h3 {
+    margin-top: 0;
+    color: #666;
+    font-weight: normal;
+}
+
+.experience p {
+    max-width: 800px;
+    line-height: 1.7;
+}
+
+/* --------------------
+   RESUME PAGE
+-------------------- */
+
+.resume-button {
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 14px 24px;
+
+    border: 1px solid #222;
+    border-radius: 5px;
+
+    color: #222;
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.resume-button:hover {
+    background-color: #222;
+    color: white;
+}
