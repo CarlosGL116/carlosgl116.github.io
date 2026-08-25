@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Project 1</title>
+    <title>Guido</title>
 
     <!-- ../ means go back one folder -->
     <link rel="stylesheet" href="../styles.css">
@@ -17,7 +17,7 @@
     <nav>
 
         <div class="nav-name">
-            Your Name
+            Carlos G. Longoria
         </div>
 
         <div class="nav-links">
@@ -36,14 +36,14 @@
         <header class="case-study-header">
 
             <p class="project-category">
-                Mechanical Design
+                Mechanical Design | Autonomous Control
             </p>
 
-            <h1>Project 1</h1>
+            <h1>Guido</h1>
 
             <p class="project-summary">
-                A one- or two-sentence overview explaining what
-                this project was and what you accomplished.
+                Guido is a fully-autonomous robot that was able to remove and
+                re-install a 16 lb tire 6 times in under 2 minutes.
             </p>
 
         </header>
@@ -52,92 +52,86 @@
         <!-- Hero image -->
         <img
             class="case-study-hero"
-            src="../images/projects/project1-thumbnail.jpg"
+            src="../projects/guido/guidoHERO.jpg"
             alt="Project 1">
-
 
         <!-- Overview -->
         <section class="case-study-section">
 
-            <h2>Overview</h2>
+            <h2>Competition Overview</h2>
 
             <p>
-                Explain the overall project. What were you building,
-                researching, testing, or trying to understand?
+                The 2026 MIT 2.007 Design Competition 'F007: Design to Survive'
+                included various point-scoring opportunities inspired by Formula 1.
             </p>
 
             <p>
-                Give enough context that somebody unfamiliar with the
-                project understands why it mattered.
+                Guido was designed to complete the tire-changing task, which was one
+                of the most lucrative opportunities for scoring points. The task required
+                that a 16 lb tire fasted by a lug nut be removed and re-installed onto an
+                axle raised 9 inches off of the ground. This task could be repeated
+                indefinitely during the 2-minute competiton to score additional points.
             </p>
 
         </section>
 
+        <!-- Hero image -->
+        <img
+            class="case-study-hero"
+            src="../projects/guido/strategy.jpg"
+            alt="Project 1">
 
-        <!-- Your Role -->
+        <!-- Strategy Description -->
         <section class="case-study-section">
 
-            <h2>My Role</h2>
+            <h2>Strategy</h2>
 
             <p>
-                Explain specifically what you were responsible for.
-                This is especially important for team projects.
+                The regulations allowed for several robots to operate at once. My strategy,
+                therefore, became to build one remote-controlled robot, Eugene, and a fully
+                autonomous robot, Guido, controlled with the provided Arduino Mega board.
             </p>
-
-            <ul>
-                <li>Designed mechanical components in CAD</li>
-                <li>Manufactured and assembled prototype components</li>
-                <li>Developed experimental testing procedures</li>
-                <li>Analyzed test results</li>
-            </ul>
 
         </section>
 
-
-        <!-- Design Requirements -->
+                <!-- Design Requirements -->
         <section class="case-study-section">
 
             <h2>Design Requirements</h2>
 
-            <p>
-                Explain the major requirements and constraints that
-                guided the design.
-            </p>
-
             <ul>
-                <li>Requirement or constraint #1</li>
-                <li>Requirement or constraint #2</li>
-                <li>Requirement or constraint #3</li>
+                <li>Maximum Volume of 12" x 12" x 16"</li>
+                <li>Maximum Weight of 12 pounds</li>
+                <li>Maximum Stored Energy of 50 kJ</li>
             </ul>
 
         </section>
 
-
         <!-- Design Process -->
-        <section class="case-study-section">
+        <section class ="case-study-section"></section>
 
-            <h2>Design Process</h2>
+            <h2>Design Process</h2h >
 
-            <p>
-                Discuss your engineering process. Explain how you moved
-                from the initial problem to concepts, calculations,
-                CAD models, prototypes, or simulations.
-            </p>
+            <ul>
+                <li>Free-Body Diagrams, Sketches, Cardboard Prototypes</li>
+                <li>CAD Renderings or Robot and Competiton Setup</li>
+                <li>Hardware Fabrication: Mill, Lathe, Power Tools, and Water Jet</li>
+                <li>Develop Autonomous State Machine Program</li>
+            </ul>
 
             <div class="case-study-images">
 
                 <img
-                    src="../images/projects/project1-thumbnail.jpg"
-                    alt="Project 1 design image">
+                    src="../projects/guido/guidoProto.jpg"
+                    alt="Project 1 FBD image">
 
                 <img
-                    src="../images/projects/project1-thumbnail.jpg"
-                    alt="Project 1 prototype image">
+                    src="../images/projects/guidoCAD.jpg"
+                    alt="Project 1 CAD image">
 
             </div>
 
         </section>
-
 
         <!-- Testing -->
         <section class="case-study-section">
@@ -145,13 +139,15 @@
             <h2>Testing</h2>
 
             <p>
-                Describe how you evaluated the design. Explain the test
-                setup, important variables, equipment used, and what
-                measurements you collected.
+                First tested with RC operation to troubleshoot robot dimensions,
+                determine adequate motor power output, and balance center of mass.
+            </p>
+
+            <p>
+                Afterwards, wrote and troubleshooted autonomous state machine program.
             </p>
 
         </section>
-
 
         <!-- Results -->
         <section class="case-study-section">
@@ -159,13 +155,16 @@
             <h2>Results</h2>
 
             <p>
-                Summarize the most important results. This is a good
-                place for graphs, tables, photographs, or comparisons
-                between your design requirements and actual performance.
+                In testing, Guido completed 6 sequential tire removal and re-installations
+                in under 2 minutes.
+            </p>
+
+            <p>
+                During the competiton, however, Guido became stuck underneath the tire of
+                the car and was unable to perform a complete "Pit Stop".
             </p>
 
         </section>
-
 
         <!-- Conclusions -->
         <section class="case-study-section">
@@ -173,25 +172,19 @@
             <h2>Conclusions</h2>
 
             <p>
-                Explain what worked, what did not work, and whether
-                the design met its original goals.
+                Guido was extremely successful in a controlled testing environment and exceeded my
+                expectations of autonomous operation. However, during manufacturing, I now realize
+                that I made the dimensions too 'perfectly-fitting' to the gameboard setup in the shop,
+                leaving Guido vulnerable to variability in the competiton setup.
             </p>
-
-        </section>
-
-
-        <!-- Lessons -->
-        <section class="case-study-section">
-
-            <h2>What I Learned</h2>
 
             <p>
-                Briefly discuss what you learned technically and what
-                you would change if you continued developing the project.
+                Where I to remake Guido, I would consider delving into mechanical compliance or adding
+                suspension to make the robot more adaptable to reasonably-variable differences in the
+                gameboard setup.
             </p>
 
         </section>
-
 
         <!-- Back button -->
         <a class="back-to-projects" href="../projects.html">
