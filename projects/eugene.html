@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Project 2</title>
+    <title>Eugene</title>
 
     <!-- ../ means go back one folder -->
     <link rel="stylesheet" href="../styles.css">
@@ -17,11 +17,11 @@
     <nav>
 
         <div class="nav-name">
-            Your Name
+            Carlos G. Longoria
         </div>
 
         <div class="nav-links">
-            <a href="../index.html">Home</a>
+            <a href="../index.html">About</a>
             <a href="../projects.html">Projects</a>
             <a href="../research.html">Research</a>
             <a href="../resume.html">Resume</a>
@@ -36,13 +36,15 @@
         <header class="case-study-header">
 
             <p class="project-category">
-                Robotics
+                Mechanical Design | Robotics
             </p>
 
-            <h1>Project 2</h1>
+            <h1>Eugene</h1>
 
             <p class="project-summary">
-                Designed and built...
+                Eugene is a remote-controlled vehicle capable
+                of pulling a 16 pound tire up to 8 feet using a winch.
+                Guido is also equipped with a flywheel for spinning tires.
             </p>
 
         </header>
@@ -51,92 +53,87 @@
         <!-- Hero image -->
         <img
             class="case-study-hero"
-            src="../images/projects/project1-thumbnail.jpg"
-            alt="Project 1">
-
+            src="../projects/eugene/eugeneHERO.jpg"
+            alt="Project 2">
 
         <!-- Overview -->
         <section class="case-study-section">
 
-            <h2>Overview</h2>
+            <h2>Competition Overview</h2>
 
             <p>
-                Explain the overall project. What were you building,
-                researching, testing, or trying to understand?
+                The 2026 MIT 'F007: Design to Survive' was an individual competition
+                organized by the Department of Mechanical Engineering as part of the class
+                2.007: Design and Manufacturing I. The 2026 interation included various
+                point-scoring opportunities inspired by Formula 1.
             </p>
 
             <p>
-                Give enough context that somebody unfamiliar with the
-                project understands why it mattered.
+                Eugene was designed to obtain the tire-pull multiplier, which required
+                a tire to be pulled further into the competitor's zone to earn a point
+                multiplier. The further into the competitor's zone the tire was, the
+                higher the multiplier. Eugene also has a large flywheel that is able to
+                spin the back tire of the model Formula 1 cars for additional points.
             </p>
 
         </section>
 
+        <!-- Hero image -->
+        <img
+            class="case-study-hero"
+            src="../projects/eugene/strategy.jpg"
+            alt="Project 2">
 
-        <!-- Your Role -->
+        <!-- Strategy Description -->
         <section class="case-study-section">
 
-            <h2>My Role</h2>
+            <h2>Strategy</h2>
 
             <p>
-                Explain specifically what you were responsible for.
-                This is especially important for team projects.
+                The regulations allowed for several robots to operate at once. My strategy,
+                therefore, became to build one remote-controlled robot, Eugene, and a fully
+                autonomous robot, Guido, controlled with the provided Arduino Mega board.
             </p>
 
-            <ul>
-                <li>Designed mechanical components in CAD</li>
-                <li>Manufactured and assembled prototype components</li>
-                <li>Developed experimental testing procedures</li>
-                <li>Analyzed test results</li>
-            </ul>
-
         </section>
-
 
         <!-- Design Requirements -->
         <section class="case-study-section">
 
             <h2>Design Requirements</h2>
 
-            <p>
-                Explain the major requirements and constraints that
-                guided the design.
-            </p>
-
             <ul>
-                <li>Requirement or constraint #1</li>
-                <li>Requirement or constraint #2</li>
-                <li>Requirement or constraint #3</li>
+                <li>Maximum Volume of 12" x 12" x 16"</li>
+                <li>Maximum Weight of 12 pounds</li>
+                <li>Maximum Stored Energy of 50 kJ</li>
             </ul>
 
         </section>
 
-
         <!-- Design Process -->
-        <section class="case-study-section">
+        <section class ="case-study-section">
 
             <h2>Design Process</h2>
 
-            <p>
-                Discuss your engineering process. Explain how you moved
-                from the initial problem to concepts, calculations,
-                CAD models, prototypes, or simulations.
-            </p>
+            <ul>
+                <li>Free-Body Diagrams, Sketches, Cardboard Prototypes</li>
+                <li>CAD Renderings or Robot and Competiton Setup</li>
+                <li>Hardware Fabrication: Mill, Lathe, Power Tools, and Water Jet</li>
+            </ul>
 
             <div class="case-study-images">
 
                 <img
-                    src="../images/projects/project1-thumbnail.jpg"
-                    alt="Project 1 design image">
+                    src="../projects/eugene/eugeneProto.jpg"
+                    alt="Project 2 FBD image">
 
                 <img
-                    src="../images/projects/project1-thumbnail.jpg"
-                    alt="Project 1 prototype image">
+                    src="../projects/eugene/eugeneCAD.jpg"
+                    alt="Project 2 CAD image">
 
             </div>
 
         </section>
-
 
         <!-- Testing -->
         <section class="case-study-section">
@@ -144,13 +141,17 @@
             <h2>Testing</h2>
 
             <p>
-                Describe how you evaluated the design. Explain the test
-                setup, important variables, equipment used, and what
-                measurements you collected.
+                The majority of testing focused on becoming skilled at driving the robot
+                around the gameboard and being able to quickly hook the winch to the tire
+                and attach to the back railing of the gameboard to complete the tire pull.
+            </p>
+
+            <p>
+                The flywheel mechanism was also tested but left as a secondary point-scoring
+                opportunity.
             </p>
 
         </section>
-
 
         <!-- Results -->
         <section class="case-study-section">
@@ -158,13 +159,16 @@
             <h2>Results</h2>
 
             <p>
-                Summarize the most important results. This is a good
-                place for graphs, tables, photographs, or comparisons
-                between your design requirements and actual performance.
+                Eugenio was able to pull the tire the maximum required length of 8 feet in
+                just under 90 seconds.
+            </p>
+
+            <p>
+                The flywheel had variable success in spinning the tire of the 4 model cars
+                due to variations between each setup.
             </p>
 
         </section>
-
 
         <!-- Conclusions -->
         <section class="case-study-section">
@@ -172,25 +176,14 @@
             <h2>Conclusions</h2>
 
             <p>
-                Explain what worked, what did not work, and whether
-                the design met its original goals.
+                Eugenio served as an integral part of my strategy for maximizing points earned during
+                the competition. However, given that I decided to manufacture 2 complete robots,
+                Eugenio had to be very lightweight and small to compensate for Guido's share of the
+                volume and weight constraints. Nonetheless, even with these increased restrictions,
+                Eugenio met my expectations as a fundamental part of my competition strategy.
             </p>
 
         </section>
-
-
-        <!-- Lessons -->
-        <section class="case-study-section">
-
-            <h2>What I Learned</h2>
-
-            <p>
-                Briefly discuss what you learned technically and what
-                you would change if you continued developing the project.
-            </p>
-
-        </section>
-
 
         <!-- Back button -->
         <a class="back-to-projects" href="../projects.html">
