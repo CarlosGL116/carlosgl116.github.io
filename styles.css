@@ -334,6 +334,52 @@ nav {
     font-weight: bold;
 }
 
+/* --------------------
+   FOOTER
+-------------------- */
+
+.site-footer {
+    margin-top: 80px;
+    padding: 30px 40px;
+
+    border-top: 1px solid #dddddd;
+
+    background-color: #fafafa;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.footer-title {
+    margin: 0 0 10px;
+
+    font-weight: 600;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #555555;
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #000000;
+}
 
 /* =========================================================
    RESPONSIVE DESIGN
@@ -375,5 +421,14 @@ nav {
 @media (max-width: 650px) {
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+    flex-direction: column;
+    gap: 8px;
+    }
+
+    .footer-links span {
+        display: none;
     }
 }
